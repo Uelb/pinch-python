@@ -91,7 +91,7 @@ class Ticket(BaseModel):
 
         if dictionary == None:
             return None
-        else:	
+        else:   
             # Extract variables from the dictionary
             id = dictionary.get("id")
             name = dictionary.get("name")
@@ -99,7 +99,7 @@ class Ticket(BaseModel):
             # Parameter is an array, so we need to iterate through it
             contacts = None
             if dictionary.get("contacts") != None:
-				contacts = list()
+                contacts = list()
                 for structure in dictionary.get("contacts"):
                     contacts.append(Person.from_dictionary(structure))
             status = dictionary.get("status")
@@ -111,7 +111,7 @@ class Ticket(BaseModel):
             # Parameter is an array, so we need to iterate through it
             documents = None
             if dictionary.get("documents") != None:
-				documents = list()
+                documents = list()
                 for structure in dictionary.get("documents"):
                     documents.append(Document.from_dictionary(structure))
             # Return an object of this model

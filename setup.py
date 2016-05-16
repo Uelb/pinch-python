@@ -1,8 +1,8 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 setup(
   name = 'Pinch',
-  packages = ['Pinch'], # this must be the same as the name above
-  version = '0.1.1',
+  packages = find_packages(),
+  version = '0.1.3',
   description = 'A simple gem to easily connect to the Inch Housing Intervention Interface',
   author = 'Inch',
   author_email = 'thomas@inchbase.com',
