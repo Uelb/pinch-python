@@ -12,7 +12,7 @@ Finally, you can install it directly from the master github branch to get the HE
 ## Configuration
 To authenticate yourself when using this package :
 ```python
-import Pinch
+from Pinch import *
 
 Configuration.x_api_token = 'MY_API_KEY'
 Configuration.x_api_email = 'myemail@example.com'
