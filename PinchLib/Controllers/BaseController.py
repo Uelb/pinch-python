@@ -3,7 +3,7 @@
 """
    PinchLib
 
-   This file was automatically generated for Pinch by APIMATIC BETA v2.0 on 05/13/2016
+   This file was automatically generated for Pinch by APIMATIC BETA v2.0 on 06/01/2016
 """
 
 from PinchLib.Http.RequestsClient import *

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """ 
-   This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 05/13/2016
+   This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 06/01/2016
 """
 
 class BaseModel(object):    

@@ -3,7 +3,7 @@
 """
    PinchLib.Controllers.WebhookController
 
-   This file was automatically generated for Pinch by APIMATIC BETA v2.0 on 05/13/2016
+   This file was automatically generated for Pinch by APIMATIC BETA v2.0 on 06/01/2016
 """
 from PinchLib.APIHelper import APIHelper
 from PinchLib.APIException import APIException
@@ -66,6 +66,10 @@ class WebhookController(BaseController):
 
         # Invoke the API call  to fetch the response.
         _response = self.http_client.execute_as_string(_http_request)
+
+        # Endpoint error handling using HTTP status codes.
+        if _response.status_code == 404:
+            return None
 
         # Global error handling using HTTP status codes.
         self.validate_response(_response)    
@@ -138,6 +142,10 @@ class WebhookController(BaseController):
 
         # Invoke the API call  to fetch the response.
         _response = self.http_client.execute_as_string(_http_request)
+
+        # Endpoint error handling using HTTP status codes.
+        if _response.status_code == 404:
+            return None
 
         # Global error handling using HTTP status codes.
         self.validate_response(_response)    
@@ -214,6 +222,10 @@ class WebhookController(BaseController):
         # Invoke the API call  to fetch the response.
         _response = self.http_client.execute_as_string(_http_request)
 
+        # Endpoint error handling using HTTP status codes.
+        if _response.status_code == 404:
+            return None
+
         # Global error handling using HTTP status codes.
         self.validate_response(_response)    
 
@@ -285,6 +297,10 @@ class WebhookController(BaseController):
         # Invoke the API call  to fetch the response.
         _response = self.http_client.execute_as_string(_http_request)
 
+        # Endpoint error handling using HTTP status codes.
+        if _response.status_code == 404:
+            return None
+
         # Global error handling using HTTP status codes.
         self.validate_response(_response)    
 
@@ -347,6 +363,10 @@ class WebhookController(BaseController):
 
         # Invoke the API call  to fetch the response.
         _response = self.http_client.execute_as_string(_http_request)
+
+        # Endpoint error handling using HTTP status codes.
+        if _response.status_code == 404:
+            return None
 
         # Global error handling using HTTP status codes.
         self.validate_response(_response)    

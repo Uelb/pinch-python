@@ -3,13 +3,14 @@
 """
    PinchLib.APIHelper
 
-   This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 05/13/2016
+   This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 06/01/2016
 """
 
 import re
 import jsonpickle
 from requests.utils import quote
 from PinchLib.Models.BaseModel import BaseModel
+
 
 class APIHelper(object):
 
@@ -96,9 +97,9 @@ class APIHelper(object):
             if element is None:
                 replace_value = ""
             elif isinstance(element, list):
-                replace_value = "/".join(str(x) for x in element)
+                replace_value = "/".join(quote(str(x), safe='') for x in element)
             else:
-                replace_value = str(element)
+                replace_value = quote(str(element), safe='')
 
             url = url.replace('{{{0}}}'.format(key),str(replace_value))
 

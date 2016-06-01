@@ -3,7 +3,7 @@
 """
    PinchLib.Models.Ticket
  
-   This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 05/13/2016
+   This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 06/01/2016
 """
 from PinchLib.Models.BaseModel import BaseModel
 from PinchLib.Models.Person import Person
@@ -99,7 +99,7 @@ class Ticket(BaseModel):
             # Parameter is an array, so we need to iterate through it
             contacts = None
             if dictionary.get("contacts") != None:
-				contacts = list()
+                contacts = list()
                 for structure in dictionary.get("contacts"):
                     contacts.append(Person.from_dictionary(structure))
             status = dictionary.get("status")
@@ -111,7 +111,7 @@ class Ticket(BaseModel):
             # Parameter is an array, so we need to iterate through it
             documents = None
             if dictionary.get("documents") != None:
-				documents = list()
+                documents = list()
                 for structure in dictionary.get("documents"):
                     documents.append(Document.from_dictionary(structure))
             # Return an object of this model
